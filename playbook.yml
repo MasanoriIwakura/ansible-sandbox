@@ -1,4 +1,7 @@
 ---
 - hosts: all
+  become: true
   roles:
     - helloworld
+    - nginxinc.nginx
+    - geerlingguy.varnish
